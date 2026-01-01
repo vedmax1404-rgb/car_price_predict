@@ -6,7 +6,7 @@ import seaborn as sns
 
 st.title("Car price prediction")
 
-with open("my.pkl", "rb") as f:
+with open("car_price_predict/my.pkl", "rb") as f:
     pack = pickle.load(f)
 
 model = pack["model"]
@@ -125,3 +125,4 @@ ax.set_xlabel("Weight value")
 ax.set_ylabel("Feature")
 
 st.pyplot(fig)
+
